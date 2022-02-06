@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+      
+      <style>
+       @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+          body{
+              
+            background-color: black;
+          }
+      
+          p{
+              color: white;
+          }
+          h1{
+              color:azure;
+font-family: 'VT323', monospace;	
+              font-size:80px;
+background-color: red;
+  border-color: palevioletred;
+              border-style: dashed;
+              border-width: thick;
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #5433FF, #20BDFF,#A5FECB);
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;          
+          animation: glitch1 2.5s infinite;
+          }
+          h1:nth-child(2) {
+  color: #67f3da;
+  animation: glitch2 2.5s infinite;
+}
+
+h1:nth-child(3) {
+  color: #f16f6f;
+  animation: glitch3 2.5s infinite;
+}
+/*Keyframes*/
+
+@keyframes glitch1 {
+  0% {
+    transform: none;
+    opacity: 1;
+  }
+  7% {
+    transform: skew(-0.5deg, -0.9deg);
+    opacity: 0.75;
+  }
+  10% {
+    transform: none;
+    opacity: 1;
+  }
+  27% {
+    transform: none;
+    opacity: 1;
+  }
+  30% {
+    transform: skew(0.8deg, -0.1deg);
+    opacity: 0.75;
+  }
+  35% {
+    transform: none;
+    opacity: 1;
+  }
+  52% {
+    transform: none;
+    opacity: 1;
+  }
+  55% {
+    transform: skew(-1deg, 0.2deg);
+    opacity: 0.75;
+  }
+  50% {
+    transform: none;
+    opacity: 1;
+  }
+  72% {
+    transform: none;
+    opacity: 1;
+  }
+  75% {
+    transform: skew(0.4deg, 1deg);
+    opacity: 0.75;
+  }
+  80% {
+    transform: none;
+    opacity: 1;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+                   #container-sm{
+        max-width: 700px;
+	  margin: auto;
+                 margin-top: 90px;
+  margin-bottom: 90px
+    }  
+          
+          #yoman{
+              color:aqua;
+              font-size:20px;
+font-family: 'Press Start 2P', cursive;
+          }
+           .moi{
+              transform: translate(0, 10px) 
+              
+          }
+          @keyframes shake-moi {
+  0% { transform: translate(-1px, 9px) rotate(14deg); }
+  33% { transform: translate(-1px, 11px) rotate(16deg); }
+  66% { transform: translate(1px, 11px) rotate(14deg); }
+  100% { transform: translate(1px, 9px) rotate(16deg); }
+}
+
+.moi:hover {
+  animation: shake-moi .16s infinite alternate;
+}
+ 
+          h2{
+font-family: 'Press Start 2P', cursive;
+             background-color: red;
+  font-size:20px;
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #5433FF, #20BDFF,#A5FECB);
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;          
+          }
+          
+          
+          h3{
+font-family: 'Press Start 2P', cursive;
+              background-color: red;
+  font-size:30px;
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #5433FF, #20BDFF,#A5FECB);
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;          
+          }
+          
+          #cv{
+              transition: transform 50ms;
+              font-family: 'VT323', monospace;	
+  font-size:30px;
+background-color: aqua;
+              border-style: dashed;
+              border-color: deeppink;
+          }
+          
+          #pdf{
+              transition: transform 50ms;
+              font-family: 'VT323', monospace;	
+                font-size:30px;
+background-color: aqua;
+              border-style: dashed;
+              border-color: deeppink;
+
+          }
+          
+          #projet{
+              transition: transform 50ms;
+              font-family: 'VT323', monospace;	
+  font-size:30px;
+background-color: aqua;
+              border-style: dashed;
+                            border-color: deeppink;
+
+          }
+          
+          
+          #cv:hover {
+    transform: translateY(-20px);
+               transform: translateY(-20px);
+        cursor: url("CAT.png"), default;   
+  }
+                #pdf:hover {
+    transform: translateY(-20px);
+                     transform: translateY(-20px);
+        cursor: url("CAT.png"), default;   
+  }
+             #projet:hover {
+    transform: translateY(-20px);
+        cursor: url("CAT.png"), default;        
+  }   
+      
+   
+    
+       
+      </style>
+    <title>cv digital</title>
+  </head>
+  <body>
+
+     
+      
+      
+      <div id="container-sm">
+      
+   <div id="changethelight"><img class="img-fluid"
+    src="switch-on.png" 
+    height="40px" 
+    width="50px" onclick="changeBackground()" id="switch"/> </div>
+       
+          
+                  
+
+          <div class="row">
+          <div class="col-6"> <h1 id="crash">Cedric Saint Charles</h1></div>                   
+
+              <div class="col-6" > <div id="yoman">Bienvenue sur ma page vous y trouverez mon cv téléchargeable en PDF, un Portofolio et des surprises!</div></div>
+                 
+          
+          </div>
+  
+          
+          
+<br><br>
+      
+     
+    
+      
+      
+      
+        <div class="row" id="yes">
+        
+        
+        <div class="col-3"> <div class="moi"  data-toggle="tooltip" data-placement="top" >
+    <img class="img-fluid"
+    src="IMGTEST.png" 
+    height="130px" 
+    width="140px" onclick="imagefun()" id="getImage"/> 
+  </div> </div>
+        
+        
+        
+        <div class="col-9">  <div class="" id="geo" data-toggle="tooltip" data-placement="top" >
+                  <h3> <span class="auto-input2"></span></h3>
+
+    
+  </div> </div>
+      
+      
+      
+      </div>
+      
+      
+      <br>
+          <br>
+      <div class="row">
+      
+ <div class="col-4">
+        
+<a href="cvdigital2.html" ><div id="cv">Curriculum Vitae</div></a>
+          </div>
+          
+          
+  <div class="col-4">
+        <a href="projectsbaby.html" > <div id="projet">Projet</div></a> 
+
+          </div>
+          
+           <div class="col-4">
+        <a href="Cedric%20Saint%20Charles.pdf" download="CV" > <div id="pdf">CV version PDF</div></a>
+
+          </div>
+
+</div>
+
+</div>
+          
+          
+          
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>       
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <script>
+  tippy('#getImage', {
+        content: 'Salut!',
+
+      });
+    
+     let typed2 = new Typed(".auto-input2", {
+      strings: ["Devellopeur Web","Chef de projet Web", "polyvalent"],
+      typeSpeed: 50,
+      backSpeed: 80,
+      loop: true
+    })
+   
+     
+     
+     
+     
+     
+     
+     
+     function imagefun() {
+              const body = document.querySelector('body');
+         var changetext = document.getElementById('crash');
+         var changetext1 = document.getElementById('cv');
+         var changetext2 = document.getElementById('pdf');
+         var changetext3 = document.getElementById('projet');
+
+         var salutation = document.getElementById('yoman');
+            var Image_Id = document.getElementById('getImage');
+            if (Image_Id.src.match("IMGTEST.png")) {
+                Image_Id.src = "IMGTEST1.png";
+                yoman.innerHTML= 'Pour me joindre ca se passe sur c.saint.charles.csc@gmail.com ou sinon par telephone au 0626362369!' ; 
+            }
+            else if (Image_Id.src.match("IMGTEST1.png")) {
+                Image_Id.src = "IMGTEST2.png";
+                yoman.innerHTML= 'Je vous invite à cesser de cliquer sur cette image et à decouvrir mon cv dans les liens plus bas, merci!'      ;
+            }
+         else
+         
+         {
+                Image_Id.src = "trex.png";
+                yoman.innerHTML= 'Bravo vous venez de faire planter la page, je vais vous rediriger sur une page plus utile, vu que vous vous ennuyez!'      ;
+                body.style.backgroundColor = 'red';
+crash.innerHTML= 'ALERTE ERREUR 404';
+             cv.innerHTML = 'Bravo!!!';
+             projet.innerHTML = 'SUPER!!!';
+             pdf.innerHTML = 'Continuez!!';
+             setTimeout(myTimeout2, 4000) ;
+
+            }
+         
+        }   
+    
+     function myTimeout2() {
+         
+
+window.location.href = "https://cedricscbjj.github.io/resume1/cvdigital2.html";
+     }
+ 
+
+
+function changeBackground(){
+                var Image_Id2 = document.getElementById('switch');
+  if (Image_Id2.src.match("switch-on.png")) {
+                Image_Id2.src = "switch-off.png";
+            }
+            else {
+                Image_Id2.src = "switch-on.png";
+            }
+     const body = document.querySelector('body');
+const colors = ['black', '#D2C6E8', '#E1CCEB', '#F0D1ED', '#FF9EAA', '#2B3568'];
+    body.style.backgroundColor = 'black';
+
+const colorIndex= parseInt(Math.random()*colors.length);
+body.style.backgroundColor = colors[colorIndex];
+}
+  </script>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    <!-- Optional JavaScript; choose one of the two! supershekelberg2030!  Petitnoir2030    -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

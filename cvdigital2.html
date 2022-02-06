@@ -1,0 +1,353 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+      
+<style>
+     @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+    h1{
+  background-image: linear-gradient(45deg, #5433FF, #20BDFF,#A5FECB);
+font-family: 'Press Start 2P', cursive;
+        background-size: 100%;
+  background-repeat: repeat;
+         -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;    
+    }
+
+
+body{
+	background-color:black;
+	color: white;
+}
+
+.container-sm {
+  max-width: 700px;
+	  margin: auto;
+background-color: black;
+font-family: 'VT323', monospace;	
+			}
+      
+         #quote{
+        color:white;
+        font-size:20px;
+             
+font-family: 'VT323', monospace;    }
+      
+    h1{
+                               cursor: url("toad.png"), default;        
+
+    }
+    .moi:hover{
+        
+                        cursor: url("toad.png"), default;        
+
+    }
+    #push:hover{
+                cursor: url("toad.png"), default;        
+
+    }
+    
+    #resultat2{
+        font-size: 22px;
+        background-color: coral;
+    }
+    #directionpremierepage{
+          transition: transform 50ms;
+              font-family: 'VT323', monospace;	
+  font-size:30px;
+background-color: aqua;
+              border-style: dashed;
+              border-color: deeppink;
+        color:blueviolet;
+    }
+    
+    #directionlien{
+          transition: transform 50ms;
+              font-family: 'VT323', monospace;	
+  font-size:30px;
+background-color: aqua;
+              border-style: dashed;
+              border-color: deeppink;
+        color:blueviolet;
+    }
+    
+    
+      #directionlien:hover {
+    transform: translateY(-20px);
+               transform: translateY(-20px);
+        cursor: url("CAT.png"), default;   
+  }
+    
+      #directionpremierepage:hover {
+    transform: translateY(-20px);
+               transform: translateY(-20px);
+        cursor: url("CAT.png"), default;   
+  }
+    
+    .img-fluid{
+          animation: float 2s infinite ease;
+
+    }
+    @keyframes float {
+  0% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(1rem);
+    -webkit-transform: translateY(1rem);
+  }
+
+  100% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+  }
+}
+    
+    
+    
+      </style>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    <title>CV DIGITAL</title>
+  </head>
+  <body>
+    
+	<div class="container-sm">
+
+	
+<br><br>  
+    
+        
+        	<div class="row">
+               <h1> Welcome aboard!</h1>
+                
+                
+                
+               </div> 
+                  <br>
+                <br>  <br>
+                <br>
+                <div class="row" id="theboard">
+        
+        
+        <div class="col-3"> <div class="moi"  data-toggle="tooltip" data-placement="top" >
+    <img class="img-fluid"
+    src="IMGTEST.png" 
+    height="130px" 
+    width="140px" onclick="" id="drixxe"/> 
+  </div> </div>
+        
+        
+        
+        <div class="col-9">  
+            
+            <div id="resultat2"> Pour acceder aux infos correspondantes tapez un des mots suivants : experience / formation / competence / contact /anecdote / anecdote1 / anecdote2 /anecdote2 / aide </div>
+    
+  </div> </div>
+                <br>
+                <br>
+ <br>                <br>
+
+                <br>
+
+        <div class="row">
+        
+        <div class="col-6"><label for="name">Tapez 'aide'</label>
+
+<input type="text" id="utilisateur2" name="name" required
+       size="20"placeholder="tapez 'aide' "></div>
+        <div class="col-3">
+            
+            <button type="button" id="push" class="btn btn-info" onclick="launchthis()">Valider</button>
+            </div>
+        </div>
+        
+        <br>
+        <br>
+        
+       
+           <div id="display" ></div>
+            
+            
+   
+            
+            
+              <div class="row">
+        
+        <div class="col">
+            <a href="projectsbaby.html" > <div id="directionlien">Portfolio</div></a>
+                  </div>
+                  
+                  
+             <div class="col">
+                <a href="index.html" > <div id="directionpremierepage">debut</div></a>
+                  
+                  </div>
+
+        </div>
+        
+        
+        
+        
+        
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+    <!-- je dois avouer que je me suis pas trop pris la tete pour pondre ca -->
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script >
+	  
+       function launchthis(){
+console.log('oui');
+var text;
+var auguste = document.getElementById("utilisateur2").value;
+
+switch(auguste){
+case "experience":
+text ="Je travaille actuellement en tant que conseiller clientele grands compte à Chronopost, j'ai aussi travaillé en tant que charge marketing a Go Sport";
+break;
+case"aide":
+text ="Pour acceder aux infos correspondantes tapez un des mots suivants : experience / formation / competence / contact /anecdote / anecdote1 / anecdote2 /anecdote2 / aide";
+break;
+case "formation":
+text = "Je possede un Master 1 en Administration et gestion d'entreprises, Autoformation developpement web sur Openclassroom, Udemy..et Youtube! ";
+break;
+case"competence":
+text=" HTML / CSS / BOOTSTRAP / JAVASCRIPT/   GITHUB / MAILCHIMP / PHOTOSHOP / SUITE OFFICE";
+break;
+ case"contact":
+text="Pour me joindre ca se passe sur c.saint.charles.csc@gmail.com ou sinon par telephone au 0626362369!";
+break;  
+ case"anecdote":
+text="J'ai participé à plusieurs éditions du 'Start up Weekend' dans lequel je m'occupais de la gestion de projet web dans un laps de temps très limité! Sueurs garantis mais projet toujours bouclé à temps!";
+break;  
+  case"anecdote1":
+text=" Etant plus jeune j'ai eu l'occasion d'exercer le métier de vendeur dans un magasin de sport et je faisais des démonstrations de produits devant un public épaté, donc lire un Powerpoint face à 2O personnes ca ne me fait pas peur.";
+break; 
+   case"anecdote2":
+text="En 2015 j'ai été chargé clientèle pour une start up qui voyait son chiffre d'affaire exploser.. cela s'accompagnait également d'une hausse exponentielle de commentaires négatifs par rapport au SAV, je devais donc nettoyer les forums, les réseaux sociaux, afin de répondre aux clients mécontent et ainsi participer à améliorer l'image de l'entreprise sur le Net.";
+break; 
+  case"anecdote3":
+text="En 2014 j'ai participé à la refonte totale du site web de Go Sport en tant que stagiaire webmarketeur, analyse de l'UI/UX design, création d'une landing page, nettoyage des liens hypertexte caduque etc c'est la première fois que je touchais à du 'code'...";
+break;        
+default:
+text = "Tapez=====> 'aide' si vous etes en galère! ";
+}
+document.getElementById("resultat2").innerHTML = text;
+} 
+        
+        
+        function bang (){
+            
+            
+        }
+        
+        
+        
+	  
+	     (function() {
+  const quotes = [
+    {
+      quote:
+        "J'ai participé à plusieurs éditions du 'Start up Weekend' dans lequel je m'occupais de la gestion de projet web dans un laps de temps très limité! Sueurs garantis mais projet toujours bouclé à temps!",
+      author: "Gestion de projet!"
+    },
+    {
+      quote:
+        " Etant plus jeune j'ai eu l'occasion d'exercer le métier de vendeur dans un magasin de sport et je faisais des démonstrations de produits devant un public épaté, donc lire un Powerpoint face à 2O personnes ca ne me fait pas peur. ",
+      author: "prise de parole "
+    },
+    {
+      quote:
+        "En 2015 j'ai été chargé clientèle pour une start up qui voyait son chiffre d'affaire exploser.. cela s'accompagnait également d'une hausse exponentielle de commentaires négatifs par rapport au SAV, je devais donc nettoyer les forums, les réseaux sociaux, afin de répondre aux clients mécontent et ainsi participer à améliorer l'image de l'entreprise sur le Net.",
+      author: "Relation clientèle"
+    },
+    {
+      quote: "Faire une bannière? Réaliser un support de communication via Adobe? Créer un petit Gif? Je sais faire. ",
+      author: " Photoshop boss"
+    },
+    {
+      quote:
+        "En 2014 j'ai participé à la refonte totale du site web de Go Sport en tant que stagiaire webmarketeur, analyse de l'UI/UX design, création d'une landing page, nettoyage des liens hypertexte caduque etc c'est la première fois que je touchais à du 'code'... ",
+      author: "HTML,CSS? Je connais!"
+    },
+ 
+  ];
+
+  const btn = document.getElementById("generate-btn");
+
+  btn.addEventListener("click", function() {
+    let random = Math.floor(Math.random() * quotes.length);
+    console.log(random);
+
+    document.getElementById("quote").textContent = quotes[random].quote;
+    document.querySelector(".author").textContent = quotes[random].author;
+  });
+})();
+      
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  </script>
+  </body>
+</html>
